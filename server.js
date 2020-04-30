@@ -23,5 +23,9 @@ app.post('/upload', (req, res) => {
     });
 });
 
+app.get("/", (req, res) => {
+    res.send("Server is Running");
+});
+
 
 app.listen(5000, () => console.log(`Server Started at PORT 5000`));
